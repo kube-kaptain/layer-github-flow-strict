@@ -1,0 +1,14 @@
+apiVersion: kaptain.org/1.7
+kind: layer-and-layerset-build
+metadata:
+  description: "GitHub Flow strict quality enforcement layer"
+
+spec:
+  layers:
+    - layer-and-layerset-build:[1.3,2.0)
+  main:
+    quality:
+      branches:
+        blockSlashes: true
+      commits:
+        blockConventional: true
