@@ -1,0 +1,18 @@
+apiVersion: kaptain.org/1.4
+kind: layer-and-layerset-build
+metadata:
+  description: "GitHub Flow strict quality enforcement layer"
+
+spec:
+  global:
+    release:
+      versioning:
+        maxParts: '2'
+  main:
+    quality:
+      branches:
+        blockSlashes: true
+      commits:
+        blockConventional: true
+    docker:
+      platform: linux/amd64,linux/arm64
