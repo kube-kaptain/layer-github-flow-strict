@@ -1,4 +1,4 @@
-apiVersion: kaptain.org/1.7
+apiVersion: kaptain.org/1.11
 metadata:
   description: "GitHub flow strict quality enforcement layer"
 
